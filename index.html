@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>The Maihoto App Survey Form</h1>
+    <p id="description"><em>We want to know what you think about an All-in-one app for creatives, that will help run your business effortlessly. 
+        <br> Thank you for your time.</em></p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><h2><b>Name:</b></h2></label><br>
+            <input id="name" type="text" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><h2><b>Email:</b></h2></label> <br>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><h2><b>Age:</b></h2></label><br>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="18+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><h2><strong>The app you use to manage your business:</strong></h2></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="app">(Select the App/Website You Use)</option>
+                <option value="pixiset">Pixieset.com</option>
+                <option value="cloudspot">Cloudspot.io</option>
+                <option value="wave">Wave Apps</option>
+                <option value="invoice">invoice.com</option>
+                <option value="more">There more than 4 Apps</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+             <div id="dropdown-div"><br>
+            <label id="dropdown-label"><h2><strong>Challenges faced using these apps:</strong></h2></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="app">(Select a Challenge)</option>
+                <option value="pixiset">It's Expensive</option>
+                <option value="cloudspot">Not Accessible in my Region</option>
+                <option value="wave">Fails to Load Fast</option>
+            </select>
+         </div>
+         <br>
+            <label id="genre-label"><h2><b>Your Photography Genre:</b></h2></label><br>
+            <h3>
+            <input type="radio" class="radio-inline" name="gender" value="employed" checked>Commercial Photographer<br>
+            <input type="radio" class="radio-inline" name="gender" value="freelancer"> Child Photographer<br>
+            <input type="radio" class="radio-inline" name="gender" value="applier"> Wedding Photographer<br>
+            <input type="radio" class="radio-inline" name="gender" value="unemployed"> Portrait Photographer
+          </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><h2><b>What features would you like to see: (Check all that apply)</h2></b></label><br>
+            <h3>
+            <input type="checkbox" name="tech1" value="profiles"> Profiles<br>
+            <input type="checkbox" name="tech2" value="studio-management"> Studio Management<br>
+            <input type="checkbox" name="tech3" value="client-galleries"> Client Galleries<br>
+            <input type="checkbox" name="tech4" value="booking-system"> Booking System<br>
+            <input type="checkbox" name="tech5" value="search-filter"> Search & Filters<br>
+            <input type="checkbox" name="tech6" value="reviews-ratings"> Reviews & Ratings<br>
+            <input type="checkbox" name="tech7" value="payment-integration"> Payment & Integration<br>
+            <input type="checkbox" name="tech8" value="social-sharing"> Social SHaring<br>
+            <input type="checkbox" name="tech9" value="notifications"> Notifications & Reminders<br>
+            <input type="checkbox" name="tech10" value="aalytics"> Analytics & Insights<br>
+            <input type="checkbox" name="tech11" value="support"> Support
+            </h3>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label"><h2>Any comments or suggestions?</h2></label><br>
+            <textarea style= height:120px;" class="form" placeholder="Enter your comment here..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
